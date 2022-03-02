@@ -1,6 +1,31 @@
-.center_box_hello {
-    margin: auto;
-    width: 50%;
-    border: 3px solid green;
-    padding: 10px
+
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#home {
+    background: url("/static/images/tech.jpg") no-repeat center center fixed;
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+}
+
+.landing-text {
+    display:table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.landing-text h1 {
+    font-size: 500%;
+    font-weight: 700;
+    color: White;
+}
+
+.landing-text h3 {
+    color: White;
 }
