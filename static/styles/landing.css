@@ -1,10 +1,11 @@
 html, body {
     height: 100%;
     width: 100%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #home {
-    background: url("/static/images/tech.jpg") no-repeat center center fixed;
+    background: url("/static/images/landing-bg-custom.jpg") no-repeat center center fixed;
     display: table;
     height: 100%;
     position: relative;
@@ -34,19 +35,160 @@ html, body {
 }
 
 .landing-text h1 {
-    font-size: 500%;
-    font-weight: 700;
+    font-size: 800%;
+    font-weight: 900;
+    color: white;
+    letter-spacing: 12px;
+}
+
+.landing-text h1 span {
+    color: blue;
+}
+
+.landing-text p {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 2px;
     color: white;
 }
 
-.landing-text h3 {
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
     color: white;
+    background-color: transparent;
+    border: 3px solid blue;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 20px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+}
+
+.btn:hover
+{
+    color: white;
+    background-color: blue;
 }
 
 .padding {
     padding: 80px 0;
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.1), #3551b5);*/
 }
 
 .padding img {
-    width: 100%
+    width: 100%;
+    border-radius: 10%;
+    
+}
+
+.padding h2 {
+    font-size: 400%;
+    font-weight: 800;
+    letter-spacing: 3.5px;
+}
+
+.padding h2 span {
+    color: blue;
+}
+
+.padding .lead {
+    font-size: 23px;
+    padding-top: 5px;
+    letter-spacing: 3px;
+}
+
+.heading{
+    font-size: 400%;
+    font-weight: 800;
+    letter-spacing: 3.5px;
+
+}
+
+.heading span{
+    color: blue;
+}
+
+.my-4 h1{
+    font-size: 200%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.my-4 h1 span {
+    color: blue;
+}
+
+.my-4 p{
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+
+.input-group {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1.2px solid gray;
+    color: black;
+    background: white;
+    font-size: 15px;
+}
+
+label {
+     height: 100%;
+     position: absolute;
+     left: 0;
+     top: 0;
+     padding: 10px;
+     color: black;
+     cursor: text;
+     transition: 0.2s;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: transparent;
+    border: 3px solid blue;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 10px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+
+}
+
+input:focus~label, 
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    top: -35px;
+    font-size: 14px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row .input-group {
+    flex-basis: 48%;
+}
+
+#getintouch {
+    background: url("/static/images/contact-bg.jpg");
 }
